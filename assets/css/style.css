@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 92vh;
+    background-color: #444CF7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#969afa 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#969afa 1.1500000000000001px, #444CF7 1.1500000000000001px);
+    background-size: 46px 46px;
+    background-position: 0 0,23px 23px;
+}
+
+nav {
+    background-color: #032078;
+    color: #fff;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+}
+
+.task-list > li:hover {
+    cursor: pointer;
+    color: #ff9500;
+    font-weight: bold;
+}
+
+.task-disabled-list > li:hover {
+    cursor: default;
+}
+
+.nav-control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 5px;
+    background: #fff0;
+    color: #fff;
+}
+
+.nav-control-btn:hover {
+    background-color: #ffffff38;
+}
+
+.view-btn-active {
+    background-color: #ffffff87;
+}
+
+.task-control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    margin: 0 5px;
+    background: #fff0;
+    color: #444CF7;
+}
+
+.task-control-btn:hover{
+    color: #ff9500;
+    font-weight: bold;
+}
+
+.task-disabled-list .task-control-btn:hover {
+    cursor: default;
+    color: #444CF7;
+    font-weight: normal;
+}
+
+.task-description {
+    font-size: small;
+}
+
+.task-list > li, .task-disabled-list > li {
+    margin: 1px;
+    width: 100%;
+}
+
+.column-style li{
+    width: 49%;
+}
+
+.column-style{
+    display: flex;
+    flex-direction: row;
+}
+
+li svg {
+    pointer-events: none;
+}
+
+.info-btn {
+    background-color: #fff0;
+    border: none;
+}
+
+.info-btn:hover{
+    color: white;
+}
+
+@media (max-width : 570px) {
+    body {
+        width: 100vw;
+    }
+}
